@@ -43,7 +43,7 @@ public class App
         
         
         //adding image
-        FileInputStream fis=new FileInputStream("src/main/java/pic3.jpg");
+        FileInputStream fis=new FileInputStream("C:\\Users\\HP\\Documents\\Hibernate repo\\RWI-JAVA-FRAMEWORK\\HIbernate Framework\\ImageSaveDemo\\src\\main\\java\\pic3.jpg");
         byte[] data=new byte[fis.available()];
         fis.read(data);
         e1.setImage(data);
