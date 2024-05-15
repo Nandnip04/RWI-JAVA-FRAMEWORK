@@ -42,11 +42,17 @@ public class App
         e2.setCity(null);
         
         
-        //adding image
+        //adding image for first employee
         FileInputStream fis=new FileInputStream("C:\\Users\\HP\\Documents\\Hibernate repo\\RWI-JAVA-FRAMEWORK\\HIbernate Framework\\ImageSaveDemo\\src\\main\\java\\pic3.jpg");
         byte[] data=new byte[fis.available()];
         fis.read(data);
         e1.setImage(data);
+
+        //adding image for second employee
+        FileInputStream fis2=new FileInputStream("C:\\Users\\HP\\Documents\\Hibernate repo\\RWI-JAVA-FRAMEWORK\\HIbernate Framework\\ImageSaveDemo\\src\\main\\java\\kanha.jpg");
+        byte[] data2=new byte[fis2.available()];
+        fis2.read(data2);
+        e2.setImage(data2);
         
         //Transaction 
         Transaction tl=session.beginTransaction();
