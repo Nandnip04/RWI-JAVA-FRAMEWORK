@@ -42,6 +42,7 @@ public class App
         e2.setCity(null);
         
         
+        
         //adding image for first employee
         FileInputStream fis=new FileInputStream("C:\\Users\\HP\\Documents\\Hibernate repo\\RWI-JAVA-FRAMEWORK\\HIbernate Framework\\ImageSaveDemo\\src\\main\\java\\pic3.jpg");
         byte[] data=new byte[fis.available()];

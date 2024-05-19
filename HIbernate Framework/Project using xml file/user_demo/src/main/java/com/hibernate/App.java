@@ -24,29 +24,28 @@ public class App
         //Transaction
         Transaction tl=session.beginTransaction();
         
-        //creating object of Product class
-        Product p1=new Product();
-        p1.setId(45);
-        p1.setName("AC");
-        
-        Product p2=new Product();
-        p2.setId(89);
-        p2.setName("Laptop");
-        
-        Product p3=new Product();
-        p3.setId(12);
-        p3.setName("Mobile");
+        //creating object of User class
+        User u1=new User();
+        u1.setId(5);
+        u1.setName("Nandni");
+        u1.setWork("Backend Developer");
+
+        User u2=new User();
+        u2.setId(7);
+        u2.setName("Nidhi");
+        u2.setWork("Frontend Developer");
+       
         
         
         //save object 
-        session.save(p1);
-        session.save(p2);
-        session.save(p3);
+        session.save(u1);
+        session.save(u2);
         
         
         tl.commit();
         session.close();
         
+        System.out.println("Data inserted successfully...............");
         
     }
 }
