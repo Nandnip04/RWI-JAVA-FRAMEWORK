@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:context="http://www.springframework.org/schema/context"
+  xmlns:p="http://www.springframework.org/schema/p"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+  https://www.springframework.org/schema/beans/spring-beans.xsd
+  http://www.springframework.org/schema/context
+  http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+
+    <bean class="com.springcore.StudentData" id="stu1">
+        <constructor-arg value="5"/>
+        <constructor-arg value="Nandni"/>
+        <constructor-arg value="81"/>
+        <constructor-arg value="78"/>
+        <constructor-arg value="94"/>
+
+    </bean>
+
+    <bean class="com.springcore.StudentData" id="stu2">
+        <constructor-arg value="12"/>
+        <constructor-arg value="Pihu"/>
+        <constructor-arg value="51"/>
+        <constructor-arg value="58"/>
+        <constructor-arg value="69"/>
+
+    </bean>
+
+  </beans>
