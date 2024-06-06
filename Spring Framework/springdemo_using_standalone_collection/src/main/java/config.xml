@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:context="http://www.springframework.org/schema/context"
+  xmlns:p="http://www.springframework.org/schema/p"
+  xmlns:util="http://www.springframework.org/schema/util"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+  https://www.springframework.org/schema/beans/spring-beans.xsd
+  http://www.springframework.org/schema/context
+  http://www.springframework.org/schema/context/spring-context.xsd
+  http://www.springframework.org/schema/util
+  http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <util:list list-class="java.util.LinkedList" id="friendlist">
+        <value>Mansi</value>
+        <value>Nidhi</value>
+        <value>Jayanti</value>
+        <value>Namarata</value>
+    </util:list>
+
+    <util:set set-class="java.util.TreeSet" id="mobileset">
+        <value>9926896531</value>
+        <value>9981953054</value>
+        <value>1234567890</value>
+        <value>9981953054</value>
+    </util:set>
+
+    <util:map map-class="java.util.HashMap" id="courcesmap">
+        <entry key="Java language" value="1 year"/>
+        <entry key="Python language" value="5 month"/>
+        <entry key="C++ language" value="3 month"/>
+    </util:map>
+
+    <util:properties id="qualificationProperty">
+        <prop key="12th">81%</prop>
+        <prop key="10th">88.6%</prop>
+        <prop key="College">8.51 cgpa</prop>
+    </util:properties>
+
+
+
+
+  <bean class="com.spring.Student" name="stu1">
+    <property name="friend" ref="friendlist" />
+    <property name="mobielNumber" ref="mobileset" />
+    <property name="cources" ref="courcesmap" />
+    <property name="qualification" ref="qualificationProperty"/>
+  </bean>
+
+ 
+  </beans>
