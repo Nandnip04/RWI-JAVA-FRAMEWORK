@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>springdemo_autowire_using_java_configuration_file</name>
+	<name>spring_jdbc_using_java_configuration_file</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -22,7 +22,7 @@
 	</natures>
 	<filteredResources>
 		<filter>
-			<id>1718021075016</id>
+			<id>1718021074938</id>
 			<name></name>
 			<type>30</type>
 			<matcher>
